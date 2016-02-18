@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+background-image: url('background.jpg');
+background-attachment: fixed;
+background-size: cover;
+}
+
+#footer {
+  background-color: grey;
+  width: 90%;
+  height: 10%;
+  position: absolute;
+  top: 160%;
+  left: 5%;
+  text-align: center;
+  font-size: 8px;
+  font-family: Arial;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  margin-bottom: 30px;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.header {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.fade-in.container1 {
+-webkit-animation-delay: 1.5s;
+-moz-animation-delay: 1.5s;
+animation-delay: 1.5s;
+}
+
+#header {
+  background-color: #FFE1BA;
+  width: 81.5%;
+  height: 250px;
+  position: absolute;
+  left: 10%;
+  margin-top: 30px;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+#container {
+  width: 80%;
+  height: 500px;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  background-color: #B0D1FF;
+  border-color: green;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+#headerIMG1 {
+  position: relative;
+  left: 830px;
+}
+
+</style>
+
+<body>
+  <div id="footer">
+    <h1>Copyright Thomas Bland 2015</h1>
+  </div>
+  <div id="container" class="fade-in container1">
+  </div>
+  <div id="header" class="fade-in header">
+<img src="leagueCrew.png" width="270px" height="250px" id="headerIMG1">
+  </div>
+
+</body>
+
+</html>
